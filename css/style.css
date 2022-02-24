@@ -1,0 +1,305 @@
+
+
+.idc-section {
+    position: relative;
+    max-width: 690px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img,
+svg {
+    width: 100%;
+    display: block;
+}
+
+.idc-container {
+    margin: 0 auto;
+    max-width: 610px;
+}
+
+.idc-bg-wrapper[style^="background-image"] {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.idc-bg-wrapper {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.idc-bg-wrapper[style^="background-image"]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+    user-select: none;
+    /* standerd */
+    -moz-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* firefox specific */
+    -webkit-user-select: none;
+    /* Chrome, Opera and Safari*/
+    -ms-user-select: none;
+    /* IE, ms-edge */
+    overflow-x: hidden;
+}
+
+.idc-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.idc-arial-24 {
+    margin: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.idc-arial-15 {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #999999;
+}
+.idc-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+}
+.idc-arial-18 {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #999999;
+}
+/* *************head************ */
+.idc-head .idc-container {
+    height: 338px;
+}
+.idc-head .idc-bg-wrapper {
+    background-position: bottom center;
+}
+
+/* ************about************ */
+.idc-about .idc-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.idc-about .idc-title {
+    max-width: 520px;
+}
+.idc-about .idc-arial-24 {
+    max-width: 530px;
+    margin-top: 33px;
+}
+.idc-about .idc-arial-15 {
+    margin-top: 17px;
+    max-width: 560px;
+}
+
+/* *************info************ */
+
+.idc-info .idc-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.idc-info .idc-title {
+    font-size: 33px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: normal;
+}
+.idc-info p {
+    margin: 0;
+}
+.idc-info p > strong {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.idc-info p:not(:first-child) {
+    margin-top: 30px;
+}
+
+.idc-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.idc-info ul:not(:last-child) {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 40px;
+}
+.idc-info ul li {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #999999;
+    padding-left: 33px;
+    margin-top: 17px;
+}
+.idc-info ul li:first-child {
+    margin-top: 15px;
+}
+.idc-info ul li::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    left: 0;
+    top: 10px;
+    opacity: 1;
+}
+/* *************pluses ************ */
+.idc-pluses .idc-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.idc-pluses-block {
+    margin-top: 40px;
+}
+.idc-pluse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 161px;
+    margin-left: 50px;
+}
+
+.idc-pluse:nth-child(1),
+.idc-pluse:nth-child(4) {
+    margin-left: 0;
+}
+.idc-pluses .idc-title {
+    font-weight: normal;
+}
+/* *************footer ************ */
+
+.idc-footer .idc-container {
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+.idc-footer .idc-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    color: #000000;
+}
+.idc-swiper-button-prev,
+.idc-swiper-button-next {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 5;
+    padding: 13px 14px;
+    margin: 0 12px;
+    box-shadow: 0px 12px 20px rgba(204, 204, 204, 0.32);
+}
+
+.idc-buttons {
+    position: absolute;
+    top: calc(50% + 45px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 5;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.idc-swiper {
+    margin: 0 -40px;
+    padding: 0 40px;
+    margin-top: 35px;
+}
+.swiper-button-disabled .idc-arrow {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    fill: #9ca1ad;
+}
+.idc-swiper-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.idc-arrow {
+    fill: #003163;
+}
+.idc-swiper-pagination {
+    text-align: center;
+    margin-top: 15px;
+}
+.idc-swiper-pagination .swiper-pagination-bullet {
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    border: 1px solid #002d51;
+}
+.idc-swiper-pagination .swiper-pagination-bullet-active {
+    background: #002d51;
+}
+
+.idc-swiper .idc-arial-24 {
+    margin-top: 40px;
+}
+.idc-swiper .idc-arial-18 {
+    margin-top: 20px;
+    max-width: 572px;
+}
